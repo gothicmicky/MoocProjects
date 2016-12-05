@@ -1,26 +1,28 @@
 #!/usr/bin/env python
 """
-This script builds and runs a graph with miniflow.
+Test your MSE method with this script!
 
-There is no need to change anything to solve this quiz!
-
-However, feel free to play with the network! Can you also
-build a network that solves the equation below?
-
-(x + y) + y
+No changes necessary, but feel free to play
+with this script to test your network.
 """
 
+import numpy as np
 from miniflow import *
 
-x, y = Input(), Input()
+y, a = Input(), Input()
+cost = MSE(y, a) 
 
-f = Add(x, y)
+y_ = np.array([1, 2, 3])
+a_ = np.array([4.5, 5, 10])
 
-feed_dict = {x: 20, y: 5}
+feed_dict = {y: y_, a: a_}
+graph = topological_sort(feed_dict)
+# forward pass
+forward_pass(graph)
 
-sorted_neurons = topological_sort(feed_dict)
-output = forward_pass(f, sorted_neurons)
+"""
+Expected output
 
-# NOTE: because topological_sort set the values for the `Input` neurons we could also access
-# the value for x with x.value (same goes for y).
-print("{} + {} = {} (according to miniflow)".format(feed_dict[x], feed_dict[y], output))
+23.4166666667
+"""
+print(cost.value)
