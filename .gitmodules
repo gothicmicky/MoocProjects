@@ -1,3 +1,6 @@
 [submodule "SelfDrivingCar/Term1/4_TensorFlow/Lab/CarND-TensorFlow-Lab"]
 	path = SelfDrivingCar/Term1/4_TensorFlow/Lab/CarND-TensorFlow-Lab
 	url = https://github.com/udacity/CarND-TensorFlow-Lab.git
+[submodule "SelfDrivingCar/Term1/7_P2_TrafficSignClassifier/CarND-Traffic-Signs"]
+	path = SelfDrivingCar/Term1/7_P2_TrafficSignClassifier/CarND-Traffic-Signs
+	url = https://github.com/udacity/CarND-Traffic-Signs

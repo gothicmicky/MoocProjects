@@ -1,46 +1,68 @@
 #!/usr/bin/env python
 
 """
-Test your network here!
+Have fun with the number of epochs!
 
-No need to change this code, but feel free to tweak it
-to test your network!
-
-Make your changes to backward method of the Sigmoid class in miniflow.py
+Be warned that if you increase them too much,
+the VM will time out :)
 """
 
 import numpy as np
+from sklearn.datasets import load_boston
+from sklearn.utils import shuffle
 from miniflow import *
 
-X, W, b = Input(), Input(), Input()
-y = Input()
-f = Linear(X, W, b)
-a = Sigmoid(f)
-cost = MSE(y, a)
+X, y = Input(), Input()
+W1, b1 = Input(), Input()
+W2, b2 = Input(), Input()
 
-X_ = np.array([[-1., -2.], [-1, -2]])
-W_ = np.array([[2.], [3.]])
-b_ = np.array([-3.])
-y_ = np.array([1, 2])
+# load data
+data = load_boston()
+X_ = data['data']
+y_ = data['target']
+# normalize data
+X_ = (X_ - np.mean(X_, axis=0)) / np.std(X_, axis=0)
+
+n_features = X_.shape[1]
+n_hidden = 10
+W1_ = np.random.randn(n_features, n_hidden)
+b1_ = np.zeros(n_hidden)
+W2_ = np.random.randn(n_hidden, 1)
+b2_ = np.zeros(1)
+
+# neural network
+l1 = Linear(X, W1, b1)
+s1 = Sigmoid(l1)
+l2 = Linear(s1, W2, b2)
+cost = MSE(y, l2)
 
 feed_dict = {
     X: X_,
     y: y_,
-    W: W_,
-    b: b_,
+    W1: W1_,
+    b1: b1_,
+    W2: W2_,
+    b2: b2_
 }
 
+epochs = 10
+m = X_.shape[0] # total number of examples
+
 graph = topological_sort(feed_dict)
-forward_and_backward(graph)
-# return the gradients for each Input
-gradients = [t.gradients[t] for t in [X, y, W, b]]
+trainables = [W1, b1, W2, b2]
 
-"""
-Expected output
+# step 4
+for i in range(epochs):
+    # step 1
+    X_, y_ = shuffle(X_, y_)
+    # reset value of Input
+    X.value = X_
+    y.value = y_
 
-[array([[ -3.34017280e-05,  -5.01025919e-05],
-       [ -6.68040138e-05,  -1.00206021e-04]]), array([[ 0.9999833],
-       [ 1.9999833]]), array([[  5.01028709e-05],
-       [  1.00205742e-04]]), array([ -5.01028709e-05])]
-"""
-print(gradients)
+    # step 2
+    forward_and_backward(graph)
+
+    # step 3
+    sgd_update(trainables,1e-3)
+
+    print('Epoch: ' + str(i) + ', Loss: ' + str(graph[-1].value))
