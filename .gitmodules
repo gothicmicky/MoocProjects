@@ -4,3 +4,6 @@
 [submodule "SelfDrivingCar/Term1/7_P2_TrafficSignClassifier/CarND-Traffic-Signs"]
 	path = SelfDrivingCar/Term1/7_P2_TrafficSignClassifier/CarND-Traffic-Signs
 	url = https://github.com/udacity/CarND-Traffic-Signs
+[submodule "SelfDrivingCar/Term1/L10_ConvolutionalNeuralNetworks/LeNetLab/CarND-LeNet-Lab"]
+	path = SelfDrivingCar/Term1/L10_ConvolutionalNeuralNetworks/LeNetLab/CarND-LeNet-Lab
+	url = https://github.com/udacity/CarND-LeNet-Lab.git
