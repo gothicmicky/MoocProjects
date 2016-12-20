@@ -1,0 +1,3 @@
+[submodule "SelfDrivingCar/Term1/L10_ConvolutionalNeuralNetworks/CarND-LeNet-Lab"]
+	path = SelfDrivingCar/Term1/L10_ConvolutionalNeuralNetworks/CarND-LeNet-Lab
+	url = https://github.com/udacity/CarND-LeNet-Lab.git
