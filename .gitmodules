@@ -4,3 +4,6 @@
 [submodule "SelfDrivingCar/Term1/L11_TrafficSignClassifier/CarND-Traffic-Sign-Classifier-Project"]
 	path = SelfDrivingCar/Term1/L11_TrafficSignClassifier/CarND-Traffic-Sign-Classifier-Project
 	url = https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project
+[submodule "SelfDrivingCar/Term1/2_FindingLaneLines/CarND-Term1-Starter-Kit-Test"]
+	path = SelfDrivingCar/Term1/2_FindingLaneLines/CarND-Term1-Starter-Kit-Test
+	url = https://github.com/udacity/CarND-Term1-Starter-Kit-Test.git
