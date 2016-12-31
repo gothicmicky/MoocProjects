@@ -7,3 +7,6 @@
 [submodule "SelfDrivingCar/Term1/2_FindingLaneLines/CarND-Term1-Starter-Kit-Test"]
 	path = SelfDrivingCar/Term1/2_FindingLaneLines/CarND-Term1-Starter-Kit-Test
 	url = https://github.com/udacity/CarND-Term1-Starter-Kit-Test.git
+[submodule "SelfDrivingCar/Term1/L8_IntroToTensorFlow/CarND-TensorFlow-Lab"]
+	path = SelfDrivingCar/Term1/L8_IntroToTensorFlow/CarND-TensorFlow-Lab
+	url = https://github.com/udacity/CarND-TensorFlow-Lab.git
