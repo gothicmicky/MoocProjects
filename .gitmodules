@@ -16,3 +16,9 @@
 [submodule "SelfDrivingCar/Term1/2_FindingLaneLines/CarND-LaneLines-P1"]
 	path = SelfDrivingCar/Term1/2_FindingLaneLines/CarND-LaneLines-P1
 	url = https://github.com/udacity/CarND-LaneLines-P1.git
+[submodule "SelfDrivingCar/Term1/L13_TransferLearning/CarND-Alexnet-Feature-Extraction"]
+	path = SelfDrivingCar/Term1/L13_TransferLearning/CarND-Alexnet-Feature-Extraction
+	url = https://github.com/udacity/CarND-Alexnet-Feature-Extraction
+[submodule "SelfDrivingCar/Term1/L13_TransferLearning/CarND-Transfer-Learning-Lab"]
+	path = SelfDrivingCar/Term1/L13_TransferLearning/CarND-Transfer-Learning-Lab
+	url = https://github.com/udacity/CarND-Transfer-Learning-Lab
