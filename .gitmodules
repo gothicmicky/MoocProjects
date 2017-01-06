@@ -22,3 +22,6 @@
 [submodule "SelfDrivingCar/Term1/L13_TransferLearning/CarND-Transfer-Learning-Lab"]
 	path = SelfDrivingCar/Term1/L13_TransferLearning/CarND-Transfer-Learning-Lab
 	url = https://github.com/udacity/CarND-Transfer-Learning-Lab
+[submodule "SelfDrivingCar/Term1/L14_BehaviorCloning/AgileTrainer"]
+	path = SelfDrivingCar/Term1/L14_BehaviorCloning/AgileTrainer
+	url = https://github.com/diyjac/AgileTrainer.git
