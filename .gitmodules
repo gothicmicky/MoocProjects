@@ -25,3 +25,6 @@
 [submodule "SelfDrivingCar/Term1/L14_BehaviorCloning/AgileTrainer"]
 	path = SelfDrivingCar/Term1/L14_BehaviorCloning/AgileTrainer
 	url = https://github.com/diyjac/AgileTrainer.git
+[submodule "SelfDrivingCar/Term1/L15_AdvancedLaneFinding/CarND-Camera-Calibration"]
+	path = SelfDrivingCar/Term1/L15_AdvancedLaneFinding/CarND-Camera-Calibration
+	url = https://github.com/udacity/CarND-Camera-Calibration.git
