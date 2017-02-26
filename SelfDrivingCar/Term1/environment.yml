@@ -17,6 +17,7 @@ dependencies:
     - flask-socketio
     - seaborn
     - pandas
+    - cython
     - pip:
         - moviepy
         - tensorflow
