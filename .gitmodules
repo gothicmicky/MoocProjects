@@ -31,3 +31,6 @@
 [submodule "SelfDrivingCar/Term1/L15_AdvancedLaneFinding/CarND-Advanced-Lane-Lines"]
 	path = SelfDrivingCar/Term1/L15_AdvancedLaneFinding/CarND-Advanced-Lane-Lines
 	url = https://github.com/udacity/CarND-Advanced-Lane-Lines.git
+[submodule "SelfDrivingCar/Term1/L14_BehaviorCloning/CarND-Behavioral-Cloning-P3"]
+	path = SelfDrivingCar/Term1/L14_BehaviorCloning/CarND-Behavioral-Cloning-P3
+	url = https://github.com/udacity/CarND-Behavioral-Cloning-P3.git
